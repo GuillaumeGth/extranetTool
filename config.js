@@ -1,3 +1,3 @@
 config = {
-    "userId": 2192
+    "userId": -1
 }
