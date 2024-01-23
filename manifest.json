@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "TimeShit",
+    "description": "C'est ça qu'il faut putain de tenir. Lache pas le morceau. Te fais pas enculer, te fais pas disperser, te fais pas fragmenter, fais pas de concession. Ya pas de concession avec la vie. Tu vis, et faut vive à fond",
+    "version": "1.0",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "icon.png"
+    },
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],    
+   
+    "content_scripts": [
+      {
+        "matches": ["https://project.ivalua.com/*"],
+        "js": ["content.js"],
+        "run_at": "document_end",
+        "all_frames": true
+      }      
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": [ "extranet_scoped_script.js"],
+        "matches": [ "https://project.ivalua.com/*" ]
+      }
+    ]
+  }

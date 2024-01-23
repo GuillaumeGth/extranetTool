@@ -1,0 +1,64 @@
+body{
+    color: rgb(40, 40, 40);
+    background: #ededed;
+    font-family: system-ui;
+    font-size: 1em;
+    padding: 10px;
+}
+h1{
+    font-size: 1.2em;
+}
+input, button{
+    cursor: pointer;
+}
+button{
+    letter-spacing: .05rem;
+    border: 1px white solid;
+    padding: 5px 10px;
+    border-radius: 5px;    
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: .9em;
+    
+}
+input{
+    margin: 8px 0;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    min-width: 190px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.when{
+    display: flex;
+    flex-direction: row;
+}
+input[type=checkbox]{
+    margin: 0 15px;
+}
+#button{
+    background: rgba(2, 152, 132, 0.727);
+}
+#randomize{
+    background: rgba(35, 30, 187, 0.551);
+}
+.title{
+    display: flex;
+}
+.check{
+    transition: .5s;
+    opacity: 0;
+}
+.check.visible{
+
+    opacity: 1;
+}
+.hidden{
+   position: absolute;
+   left: -9999px;
+}

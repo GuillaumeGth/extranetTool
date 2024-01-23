@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script src="config.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="content">
+            <div class="title"><h1>Timesheet</h1><img class="check" src="check.png" width="50"/></div>
+            <div class="when"><span>Last working day ?</span><input type="checkbox" id="yesterday"/></div>
+            <div><span>Maint/Evol: </span><span id="ratio">50/50</span></div>
+            <input id="input" type="range" max="100" min="0" step="10" value="50" />
+            <div class="buttons">
+                <!--<button id="randomize" type="button">Randomize</button>-->
+                <button id="button" type="button">Submit</button>            
+            </div>                    
+        </div>
+    </body>    
+</html>
+<script src="script.js"></script>
